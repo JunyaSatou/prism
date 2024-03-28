@@ -1,0 +1,11 @@
+openapi: 3.1.0
+info:
+  version: '2.0'
+  title: ブログ | APIレファレンス
+
+tags:
+  - name: blog
+    x-displayName: "ブログ"
+paths:
+  /create:
+    $ref: ./paths/blog/create.yaml

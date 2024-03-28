@@ -1,0 +1,26 @@
+post:
+  summary: ブログ
+  operationId: blog-post
+  description: |-
+    ブログ作成API
+  responses:
+    '200':
+      description: "OK"
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/blog/create/responses/200.yaml
+    '400':
+      description: "バリデーションエラー"
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/blog/create/responses/400.yaml
+  requestBody: # リクエストボディ
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/blog/create/requests/index.yaml
+  tags:
+    - blog

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  prism-sample:
+    container_name: prism-sample
+    image: stoplight/prism:4.11.1
+    ports:
+      - "4010:4010"
+    volumes:
+      - type: bind
+        source: ./api/reference
+        target: /tmp
+    command: mock -h 0.0.0.0 /tmp/openapi.yaml

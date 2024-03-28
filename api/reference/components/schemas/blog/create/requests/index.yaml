@@ -1,0 +1,16 @@
+title: ブログ作成API
+x-stoplight:
+  id: c7grs7ntl3mud
+required:
+  - title
+  - content
+type: object
+properties:
+  title:
+    type: string
+    title: ブログタイトル
+    example: 初めてのブログ
+  content:
+    type: string
+    title: ブログ本文
+    example: 初めてブログを書きました。

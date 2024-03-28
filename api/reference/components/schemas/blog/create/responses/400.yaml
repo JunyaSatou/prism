@@ -1,0 +1,14 @@
+type: object
+properties:
+  result:
+    type: boolean
+    title: 結果
+    example: false
+  error_messages:
+    type: array
+    title: エラーメッセージ
+    items:
+      type: string
+    example:
+      - ブログタイトルは必須です
+      - ブログ本文は必須です
